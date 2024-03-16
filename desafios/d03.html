@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body{
+            font: normal 13px Arial;
+        }
+        input[type="button"]{
+            padding: 20px 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <input type="button" value="Antecessor e Sucessor" onclick="clicar()">
+    <script>
+        function clicar(){
+            var num = window.prompt('Digite um número inteiro qualquer')
+            var n1 = Number(num)
+            var ant = n1 - 1
+            var suc = n1 + 1
+            window.alert(`Antes de ${n1}, temos o número ${ant}.\nDepois de ${n1} temos o número ${suc}.`)
+        }
+    </script>
+</body>
+</html>
